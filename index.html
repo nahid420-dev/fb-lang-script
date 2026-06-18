@@ -1,10 +1,59 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <title>FB Lang Script</title>
+<style>
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  font-family:Arial,sans-serif;
+  color:white;
+  overflow:hidden;
+}
+.card{
+  text-align:center;
+  padding:45px 70px;
+  border-radius:25px;
+  background:rgba(255,255,255,.12);
+  box-shadow:0 20px 60px rgba(0,0,0,.45);
+  backdrop-filter:blur(12px);
+  animation:pop 1s ease;
+}
+h1{
+  font-size:48px;
+  margin:0;
+  background:linear-gradient(90deg,#00ffcc,#ffffff,#00aaff);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+p{font-size:20px;opacity:.9}
+@keyframes pop{
+  from{transform:scale(.7);opacity:0}
+  to{transform:scale(1);opacity:1}
+}
+.glow{
+  position:absolute;
+  width:350px;height:350px;
+  background:#00ffcc55;
+  border-radius:50%;
+  filter:blur(80px);
+  animation:move 5s infinite alternate;
+}
+@keyframes move{
+  from{left:10%;top:10%}
+  to{left:65%;top:55%}
+}
+</style>
 </head>
 <body>
-<h1>Credit By Nahid Hasan</h1>
+<div class="glow"></div>
+<div class="card">
+  <h1>Credit BY Nahid Hasan</h1>
+  <p>Facebook Language Automation</p>
+</div>
 </body>
 </html>
